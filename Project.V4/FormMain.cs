@@ -81,7 +81,7 @@ namespace Project.V4
                 str = "";
             }
         }
-        
+
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             string searchText = textBoxSearch.Text.Trim().ToLower();
@@ -133,8 +133,20 @@ namespace Project.V4
                 dataGrid.Rows.Add(row);
             }
         }
+        private void buttonSave_MouseEnter(object sender, EventArgs e)
+        {
+            toolTip.ToolTipTitle = "";
+        }
+        private void buttonLoad_MouseEnter(object sender, EventArgs e)
+        {
+            toolTip.ToolTipTitle = "";
+        }
+        private void buttonSearch_MouseEnter(object sender, EventArgs e)
+        {
+            toolTip.ToolTipTitle = "";
+        }
 
-     
+
     }
 }
 
